@@ -3,4 +3,18 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+
+.campus-map {
+    height: auto;
+    width: 90%;
+    align-self: center;
+    pointer-events: none;
+  }
+
+  .map-key {
+    height: 25%;
+    width: 25%;
+    align-self: center;
+    pointer-events: none;
+  }
   
