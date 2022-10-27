@@ -1,1 +1,1 @@
-web: gunicorn studyarea.wsgi
+web: gunicorn backend.wsgi
