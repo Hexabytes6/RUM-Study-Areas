@@ -21,6 +21,7 @@ from studyarea import views
 router = routers.DefaultRouter()
 router.register('studyareas', views.StudyAreaView, 'studyarea')
 router.register('reviews', views.ReviewView, 'review')
+router.register('profiles', views.ProfileView, 'profile')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
