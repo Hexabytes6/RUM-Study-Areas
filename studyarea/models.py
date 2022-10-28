@@ -25,3 +25,15 @@ class Review(models.Model):
 
     def _str_(self):
         return self.name
+
+
+class Profile(models.Model):
+    objects = models.Manager()
+    username = models.CharField(max_length=12)
+    password = models.CharField(max_length=32)
+    email = models.EmailField(max_length=256)
+    display_first_name = models.CharField(max_length=32)
+    display_last_name = models.CharField(max_length=32)
+
+    def _str_(self):
+        return f"{self.username.__str__()}:{self.email}"
