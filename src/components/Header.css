@@ -19,8 +19,8 @@
   }
 
   .paw-logo {
-    height: 15%;
-    width: 15%;
+    height: auto;
+    width: auto;
     align-self: center;
     pointer-events: none;
   }

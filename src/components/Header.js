@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
-import paw from './paw.webp';
+import paw from './paw.png';
 
 const Header = () => {
     return (
