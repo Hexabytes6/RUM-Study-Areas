@@ -28,6 +28,12 @@ const Catalog = () => {
                     <Classroom code={classroom.code} building={classroom.building} image={classroom.img}/>
                 ))}
             </div>
+            <h1 className="a" >Available Classrooms</h1>
+            <h2 className="b" >Stefani-203</h2>
+            <h2 className="b" >Stefani-105 B (Centro de Cómputos)</h2>
+            <h2 className="b" >Stefani-105 D (Centro de Cómputos)</h2>
+            <h2 className="b" >II-222 (Peceras)</h2>
+            <h2 className="b" >II-108 (Centro de Cómputos)</h2>
         </div>
     )
 }
