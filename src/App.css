@@ -55,13 +55,3 @@ button {
   src: local("Monday"),
     url("./Fonts/monday-sans.regular.ttf");
 }
-
-.background {
-  background-image: url(background.png);
-  background-size: cover;
-  background-repeat: repeat;
-  display:flexbox;
-  height: auto;
-  width: auto;
-  size: auto;
-}
