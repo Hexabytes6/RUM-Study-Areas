@@ -1,13 +1,13 @@
 import React, {useState} from 'react'
 import {useNavigate} from 'react-router-dom'
-import './SignUp.css'
+import './Profile.css'
 import { Link } from 'react-router-dom'
 
 //import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
 
-function SignUp() {
+function Profile() {
   // React States
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -68,19 +68,17 @@ function SignUp() {
           {renderErrorMessage("uname")}
         </div>
         <div className="input-container">
-          <label>Institutional Email </label>
-          <input type="text" name="pass" required />
-          {renderErrorMessage("pass")}
+          <label>Email </label>
+          <input type="text"/>
         </div>
         <div className="input-container">
           <label>Password </label>
-          <input type="password" name="uname" required />
-          {renderErrorMessage("uname")}
+          <input type="password" name="pass" required />
+          {renderErrorMessage("pass")}
         </div>
         <div className="input-container">
           <label>Verify Password </label>
-          <input type="password" name="uname" required />
-          {renderErrorMessage("uname")}
+          <input type="password"/>
         </div>
         <div className="button-container">
           <input type="submit" />
@@ -90,16 +88,14 @@ function SignUp() {
   );
 
   return (
-    <div className='background'>
     <div className="app">
       <div className="login-form">
-        <div className="title">Sign Up</div>
-        {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
+        <div className="title">Signed In</div>
+        {isSubmitted ? <div>You have successfully signed up for study areas!</div> : renderForm}
       </div>
-    </div>
     </div>
   );
 }
 
-export default SignUp
+export default Profile
 

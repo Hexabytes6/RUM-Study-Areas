@@ -19,9 +19,9 @@ class App extends Component {
         <Header/>
         <Routes>
           <Route path="/signup" element={<SignUp/>}></Route>
-          <Route path="/" element= {<Catalog/>}></Route>
+          <Route path="/profile" element= {<Profile/>}></Route>
           <Route path="/recommender" element={<FindClassroom/>}></Route>
-          <Route path="/profile" element={<Profile/>}></Route>
+          <Route path="/" element={<Catalog/>}></Route>
         </Routes>
       </Router>
       </div>

@@ -13,7 +13,7 @@ const Header = () => {
                 <Link to="/profile" className='links' >Profile</Link>
             </div>
         </div>
-        <hr className='divider'></hr>
+        <div className='divider'></div>
     </div>
     )
 }

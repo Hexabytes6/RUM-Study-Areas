@@ -6,8 +6,9 @@
     gap: 100px;
     height: 90vh; /* esto mueve el cuadrado*/
     font-family: Helvetica;
-    background-color: rgb(243,243,235);
+    background-image: url(profileback.png);
     letter-spacing: 1.8px;
+    
   }
 
 
@@ -68,4 +69,14 @@
 
   .signup:hover{
     color:rgb(11, 124, 11)
+  }
+
+  .arrow-container {
+    font-size: xx-large;
+    display: flex;
+    justify-content: left;
+    height: 50px;
+    color: rgb(11, 124, 11);
+
+
   }
