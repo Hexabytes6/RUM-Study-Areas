@@ -1,14 +1,14 @@
 from random import randint
 
 from django.db import models
-from django.core.validators import MaxValueValidator, MinValueValidator
+from django.core.validators import MaxValueValidator, MinValueValidator, RegexValidator
 
 
 # Create your models here.
 
 class StudyArea(models.Model):
     objects = models.Manager()
-    room_id = models.CharField(max_length=20, primary_key=True, )
+    room_id = models.CharField(max_length=20, primary_key=True, validators=[RegexValidator('[a-zA-Z]-\d\d\d')])
     building = models.CharField(max_length=120)
     features = models.JSONField(null=True)  # DUMMY FIELD TODO IMPLEMENT A WAY TO READ FEATURES
     completed = models.BooleanField()
