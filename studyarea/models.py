@@ -35,7 +35,6 @@ def generate_id():
 
 
 class Review(models.Model):
-
     objects = models.Manager()
     review_id = models.BigAutoField(primary_key=True, unique=True, blank=True, default=generate_id)
     creator = models.CharField(max_length=30)
@@ -44,10 +43,8 @@ class Review(models.Model):
     rating = models.IntegerField(default=1, validators=[MaxValueValidator(5), MinValueValidator(1)])
     study_area = models.ForeignKey(StudyArea, null=True, on_delete=models.CASCADE, related_name='reviews')
 
-
     def __str__(self):
         return f'Review ID: {self.review_id}'
-
 
 
 class Profile(models.Model):
@@ -60,4 +57,3 @@ class Profile(models.Model):
 
     def _str_(self):
         return f"{self.username.__str__()}:{self.email}"
-
