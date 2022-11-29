@@ -18,12 +18,12 @@ from django.urls import path, include
 from rest_framework import routers
 from studyarea import views
 
-router = routers.DefaultRouter()
-router.register('studyareas', views.StudyAreaView, 'studyarea')
-router.register('reviews', views.ReviewView, 'review')
-router.register('profiles', views.ProfileView, 'profile')
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/', include(router.urls)),
-]
+# router = routers.DefaultRouter()
+# router.register('studyareas', views.StudyAreaView, 'studyarea')
+# router.register('reviews', views.ReviewView, 'review')
+# router.register('profiles', views.ProfileView, 'profile')
+#
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+#     path('api/', include(router.urls)),
+# ]
