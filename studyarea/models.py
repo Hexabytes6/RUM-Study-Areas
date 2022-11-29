@@ -1,30 +1,53 @@
+from random import randint
+
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 
 # Create your models here.
+
 class StudyArea(models.Model):
     objects = models.Manager()
-    name = models.CharField(max_length=120)
-    room_id = models.CharField(max_length=20)
+    room_id = models.CharField(max_length=20, primary_key=True, )
     building = models.CharField(max_length=120)
-    features = models.JSONField()  # DUMMY FIELD TODO IMPLEMENT A WAY TO READ FEATURES
+    features = models.JSONField(null=True)  # DUMMY FIELD TODO IMPLEMENT A WAY TO READ FEATURES
     completed = models.BooleanField()
 
-    def _str_(self):
-        return self.name
+    def __str__(self):
+        return f'Room Name: {self.room_id}'
+
+
+class Schedule(models.Model):
+    objects = models.Manager()
+
+    day = models.CharField(max_length=15)
+    time_start = models.TimeField()
+    time_end = models.TimeField()
+
+    study_area = models.ForeignKey(StudyArea, null=True, on_delete=models.CASCADE, related_name='schedules')
+
+    def __str__(self):
+        return f'{self.day}, {self.time_start.__str__()} - {self.time_end.__str__()}'
+
+
+def generate_id():
+    return randint(10000, 99999)
 
 
 class Review(models.Model):
+
     objects = models.Manager()
-    review_id = models.IntegerField()
+    review_id = models.BigAutoField(primary_key=True, unique=True, blank=True, default=generate_id)
     creator = models.CharField(max_length=30)
     title = models.CharField(max_length=50)
     description = models.CharField(max_length=500)
     rating = models.IntegerField(default=1, validators=[MaxValueValidator(5), MinValueValidator(1)])
+    study_area = models.ForeignKey(StudyArea, null=True, on_delete=models.CASCADE, related_name='reviews')
 
-    def _str_(self):
-        return self.review_id
+
+    def __str__(self):
+        return f'Review ID: {self.review_id}'
+
 
 
 class Profile(models.Model):
@@ -37,3 +60,4 @@ class Profile(models.Model):
 
     def _str_(self):
         return f"{self.username.__str__()}:{self.email}"
+
