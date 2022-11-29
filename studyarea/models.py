@@ -44,8 +44,10 @@ class Review(models.Model):
     rating = models.IntegerField(default=1, validators=[MaxValueValidator(5), MinValueValidator(1)])
     study_area = models.ForeignKey(StudyArea, null=True, on_delete=models.CASCADE, related_name='reviews')
 
+
     def __str__(self):
         return f'Review ID: {self.review_id}'
+
 
 
 class Profile(models.Model):
