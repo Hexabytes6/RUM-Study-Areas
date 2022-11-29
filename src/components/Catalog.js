@@ -87,7 +87,7 @@ const Catalog = () => {
     return (
         <div className="background">
             <div className="titleCatalog">Catalog</div>
-            <div className="subtitleCatalog">Available study area on campus.</div>
+            <div className="subtitleCatalog">Available study areas on campus.</div>
             <div className="grid">{database.map(renderCard)}</div>
         </div>
         
