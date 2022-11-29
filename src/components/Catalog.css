@@ -22,8 +22,18 @@
     font-family: Monday;
     text-align: left;
     margin-left: 2%;
-    margin-top: 2%;
+    margin-top: -10px;
     font-size: 70px;
+  }
+  .subtitleCatalog {
+    font-family: Monday;
+    text-align: left;
+    margin-left: 2.5%;
+    margin-top: -1%;
+    margin-bottom: 2%;
+    font-size: 25px;
+
+    color: gray;
   }
 
   .availableClassrooms {
@@ -37,5 +47,15 @@
     font-weight: 500;
     font-family: Monday;
     font-size: 20px;
+    }
+
+  .background {
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: repeat;
+    display:flexbox;
+    height: auto;
+    width: auto;
+    size: auto;
     }
   

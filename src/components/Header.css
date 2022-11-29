@@ -4,8 +4,9 @@
     align-items: center;
     justify-content: space-evenly;
     height: 90px;
-    background-color: rgb(255, 255, 255);
-  
+    background-image: url(background.png);
+    background-size: 200%;
+
   }
 
   .logo {
@@ -21,7 +22,7 @@
     text-decoration: none;
     float: left;
     letter-spacing: 1px;
-    margin: 10px;
+    margin: 20px;
     margin-right: auto;
     font-size: 20px;
     
@@ -35,6 +36,8 @@
     border-top: 4px  solid rgb(11, 124, 11);
     margin-top: -10px;
     opacity: 1;
+    background-color: rgb(243,243,235);
   }
 
+ 
   

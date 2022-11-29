@@ -18,46 +18,48 @@ const Catalog = () => {
     // Study Areas 
   const database = [
     {
-      name: "Room 1",
       room_id: "S-113",
       building: "Stefani",
-      features: "air condioner"
+      features: "air conditoner",
+      schedules: "Lunes, 07:00:00 - 22:00:00"
     },
     {
-      name: "Room 2",
       room_id: "S-105",
       building: "Stefani",
-      features: "computers"
+      features: "computers",
+      schedules: "Lunes, 07:00:00 - 22:00:00"
     },
     {
-        name: "Room 3",
         room_id: "S-204",
         building: "Stefani",
-        features: "air condioner, computers"
+        features: "air condioner, computers",
+        schedules: "Lunes, 07:00:00 - 22:00:00"
+
       },
       {
-        name: "Room 4",
         room_id: "S-221",
         building: "Stefani",
-        features: "air condioner, computers"
+        features: "air condioner, computers",
+        schedules: "Lunes, 07:00:00 - 22:00:00"
       },
       {
         name: "Room 5",
         room_id: "S-115",
         building: "Stefani",
-        features: "air condioner, computers"
+        features: "air condioner, computers",
+        schedules: "Lunes, 07:00:00 - 22:00:00"
       },
       {
-        name: "Room 6",
         room_id: "S-121",
         building: "Stefani",
-        features: "air condioner, computers"
+        features: "air condioner, computers",
+        schedules: "Lunes, 07:00:00 - 22:00:00"
       },
     {
-        name: "Room 7",
         room_id: "II-219",
         building: "Industrial",
-        features: "air condioner, desks"
+        features: "air condioner, desks",
+        schedules: "Lunes, 07:00:00 - 22:00:00"
     }
   ];
 
@@ -65,12 +67,16 @@ const Catalog = () => {
 
     const renderCard = (card, index) =>{
         return(
+          
             <Card style={{ width: '18rem' }} key={index} className="box">
             <Card.Body>
-                <Card.Title>{card.name} {card.room_id}</Card.Title>
+                <Card.Title>{card.room_id}</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">{card.building}</Card.Subtitle>
                  <Card.Text>
                     {card.features}
+                </Card.Text>
+                <Card.Text>
+                    {card.schedules}
                 </Card.Text>
                 <Card.Link href="#">Reviews</Card.Link>
             </Card.Body>
@@ -79,8 +85,9 @@ const Catalog = () => {
     }
 
     return (
-        <div>
+        <div className="background">
             <div className="titleCatalog">Catalog</div>
+            <div className="subtitleCatalog">Available study area on campus.</div>
             <div className="grid">{database.map(renderCard)}</div>
         </div>
         

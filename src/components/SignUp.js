@@ -90,11 +90,13 @@ function SignUp() {
   );
 
   return (
+    <div className='background'>
     <div className="app">
       <div className="login-form">
         <div className="title">Sign Up</div>
         {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
       </div>
+    </div>
     </div>
   );
 }

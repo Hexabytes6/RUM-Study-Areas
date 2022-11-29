@@ -7,13 +7,14 @@ import './App.css';
 import "./Fonts/monday-sans.regular.ttf";
 import SignUp from './components/SignUp';
 import React, {Component} from 'react';
+import background from './background.png'
 
 
 
 class App extends Component {
   render(){
     return (
-      <div className="App">
+      <div className='App'>
       <Router>
         <Header/>
         <Routes>
