@@ -6,8 +6,15 @@ import './Box.css'
 import { json, useNavigate } from 'react-router-dom'
 import React from 'react'
 
-
 const Catalog = () => {
+  
+     const [data, setData] = useState([]);
+    useEffect(() => {
+        fetch('http://rum-study-areas-backend.herokuapp.com/api/studyareas/')
+        .then(response => response.json())
+        .then(json => setData(json))
+    }, []) 
+    
     // Study Areas 
   const database = [
     {
@@ -54,12 +61,7 @@ const Catalog = () => {
     }
   ];
 
-    // const [data, setData] = useState([]);
-    // useEffect(() => {
-    //     fetch('http://rum-study-areas-backend.herokuapp.com/api/studyareas/')
-    //     .then(response => response.json())
-    //     .then(json => setData(json))
-    // }, [])
+  
 
     const renderCard = (card, index) =>{
         return(
@@ -85,7 +87,51 @@ const Catalog = () => {
     )
 }
 
-export default Catalog
+export default Catalog 
+
+// export default class Catalog extends React.Component {
+//   state = {
+//     loading: true,
+//     studyareas: []
+//   }
+
+//   async componentDidMount () {
+//     const url = "http://rum-study-areas-backend.herokuapp.com/api/studyareas/"
+//     const response = await fetch(url)
+//     const data = await response.json()
+
+//     const {
+//       name = "",
+//       room_id = ""
+//     } = data
+
+//     this.setState({ name: name, room_id: room_id, loading: false})
+//   }
+
+//   render() {
+//     if (this.state.loading) {
+//       return <div>Loading...</div>
+//     }
+
+//     if (!this.state.name.length) {
+//       return <div>No data available</div>
+//     }
+
+//     return (
+//       <div>
+//         <h1>Study Areas</h1>
+//         {this.state.name.map((item, key) => {
+//           return (
+//             <div key ={key}>
+//               Room ID {item.room_id}
+//             </div>
+//           )
+//         })}
+//       </div>
+//     )
+//   }
+// }
+
 
 
 

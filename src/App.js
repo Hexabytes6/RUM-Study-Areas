@@ -6,11 +6,14 @@ import Header from './components/Header';
 import './App.css';
 import "./Fonts/monday-sans.regular.ttf";
 import SignUp from './components/SignUp';
+import React, {Component} from 'react';
 
 
-function App() {
-  return (
-    <div className="App">
+
+class App extends Component {
+  render(){
+    return (
+      <div className="App">
       <Router>
         <Header/>
         <Routes>
@@ -20,8 +23,23 @@ function App() {
           <Route path="/profile" element={<Profile/>}></Route>
         </Routes>
       </Router>
-    </div>
-  );
+      </div>
+    )
+  }
 }
+//   return (
+//     <div className="App">
+//       <Router>
+//         <Header/>
+//         <Routes>
+//           <Route path="/signup" element={<SignUp/>}></Route>
+//           <Route path="/" element= {<Catalog/>}></Route>
+//           <Route path="/recommender" element={<FindClassroom/>}></Route>
+//           <Route path="/profile" element={<Profile/>}></Route>
+//         </Routes>
+//       </Router>
+//     </div>
+//   );
+// }
 
 export default App;
