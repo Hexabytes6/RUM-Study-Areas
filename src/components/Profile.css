@@ -78,3 +78,19 @@
     height: 50px;
     color: rgb(11, 124, 11);
   }
+
+  .user-info {
+    border-style: solid;
+    border-color: #ECECEC;
+    background-color:  white;
+    border-width: 1px;
+    margin-top: -20px;
+  }
+
+  .rand {
+    margin-top: -50px;
+  }
+
+  .aligner {
+    align-content: left;
+  }

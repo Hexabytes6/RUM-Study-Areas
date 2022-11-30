@@ -15,12 +15,12 @@ function Profile() {
   // User Login info
   const database = [
     {
-      username: "user1",
+      username: "oliviaP",
       password: "pass1"
     },
     {
-      username: "user2",
-      password: "pass2"
+      username: "kevin_nav",
+      password: "iloveuprm"
     }
   ];
 
@@ -84,7 +84,21 @@ function Profile() {
     <div className="app">
       <div className="login-form">
         <div className="title">Sign In</div>
-        {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
+        {isSubmitted ? 
+        <div> 
+          <div className="rand">User is successfully signed in</div>
+          <br></br>
+          <div className='aligner'> <b> User Information: </b> </div> 
+          <p> <b> Name </b> </p>
+          <div className="user-info"> Kevin Navarro </div> 
+          <br></br>
+          <p> <b> Email </b> </p>
+          <div className="user-info"> kevin.navarro213@upr.edu </div> 
+          <br></br>
+          <p> <b> Password </b> </p>
+          <div className="user-info"> ••••••••• </div> 
+          <br></br>
+        </div> : renderForm}
         <a>Not registered? <Link to="/signup" className='signup'>Sign Up</Link></a>
       </div>
     </div>
