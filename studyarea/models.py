@@ -8,6 +8,7 @@ features = (
     ('Air Conditioner', 'Air Conditioner'),
     ('Computers', 'Computers'),
     ('Whiteboard', 'Whiteboard'),
+    ('Keycard Required', 'Keycard Required'),
     ('None', 'None')
 )
 
