@@ -60,7 +60,43 @@ const Catalog = () => {
         building: "Industrial",
         features: "air condioner, desks",
         schedules: "Lunes, 07:00:00 - 22:00:00"
-    }
+    },
+    {
+      room_id: "II-219",
+      building: "Industrial",
+      features:  ["Air Conditioner", "Computers", "Whiteboard"],
+      schedules: "Lunes, 07:00:00 - 22:00:00"
+  },
+  {
+    room_id: "II-219",
+    building: "Industrial",
+    features: "air condioner, desks",
+    schedules: "Lunes, 07:00:00 - 22:00:00"
+  },
+  {
+    room_id: "II-219",
+    building: "Industrial",
+    features: "air condioner, desks",
+    schedules: "Lunes, 07:00:00 - 22:00:00"
+  },
+  {
+    room_id: "II-219",
+    building: "Industrial",
+    features: "air condioner, desks",
+    schedules: "Lunes, 07:00:00 - 22:00:00"
+  },
+  {
+    room_id: "II-219",
+    building: "Industrial",
+    features: "air condioner, desks",
+    schedules: "Lunes, 07:00:00 - 22:00:00"
+  },
+  {
+    room_id: "II-219",
+    building: "Industrial",
+    features: "air condioner, desks",
+    schedules: "Lunes, 07:00:00 - 22:00:00"
+  },
   ];
 
   
@@ -89,6 +125,7 @@ const Catalog = () => {
             <div className="titleCatalog">Catalog</div>
             <div className="subtitleCatalog">Available study areas on campus.</div>
             <div className="grid">{database.map(renderCard)}</div>
+            <div className="copyright">Copyright © 2022 Hexabytes</div>
         </div>
         
     )
