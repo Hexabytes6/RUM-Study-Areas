@@ -90,7 +90,7 @@ function Profile() {
   return (
     <div className="app">
       <div className="login-form">
-        <div className="title">Signed In</div>
+        <div className="title">Sign Up</div>
         {isSubmitted ? <div>You have successfully signed up for study areas!</div> : renderForm}
       </div>
     </div>
