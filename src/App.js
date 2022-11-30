@@ -8,6 +8,8 @@ import "./Fonts/monday-sans.regular.ttf";
 import SignUp from './components/SignUp';
 import React, {Component} from 'react';
 import background from './background.png'
+import { MultiSelectComponent  } from '@syncfusion/ej2-react-dropdowns';
+
 
 
 
