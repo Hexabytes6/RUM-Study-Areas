@@ -67,6 +67,9 @@ import "./Recommender.css"
           onChange={setSelected3}
           labelledBy="Select"
         />
+        <div className="button-container1">
+          <input type="submit" />
+        </div>
       <div className="copyright1">Copyright © 2022 Hexabytes</div>
       </div>
     );
