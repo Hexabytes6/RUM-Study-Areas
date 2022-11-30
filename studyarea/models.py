@@ -18,7 +18,7 @@ class StudyArea(models.Model):
     objects = models.Manager()
     room_id = models.CharField(max_length=20, primary_key=True, validators=[RegexValidator('[a-zA-Z]-\d\d\d')])
     building = models.CharField(max_length=120)
-    features = MultiSelectField(choices=features, max_choices=3, max_length=4)
+    features = MultiSelectField(choices=features, max_choices=3, max_length=300)
     completed = models.BooleanField()
 
     def __str__(self):
