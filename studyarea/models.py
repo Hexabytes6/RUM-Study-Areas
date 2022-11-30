@@ -29,7 +29,7 @@ class StudyArea(models.Model):
 class Schedule(models.Model):
     objects = models.Manager()
 
-    day = models.CharField(max_length=15)
+    day = models.CharField(max_length=100)
     time_start = models.TimeField()
     time_end = models.TimeField()
 
