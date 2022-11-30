@@ -5,10 +5,10 @@ from django.core.validators import MaxValueValidator, MinValueValidator, RegexVa
 from multiselectfield import MultiSelectField
 
 features = (
-    ('AC', 'Air Conditioner'),
-    ('PC', 'Computers'),
-    ('WB', 'Whiteboard'),
-    ('NONE', 'None')
+    ('Air Conditioner', 'Air Conditioner'),
+    ('Computers', 'Computers'),
+    ('Whiteboard', 'Whiteboard'),
+    ('None', 'None')
 )
 
 
