@@ -2,6 +2,14 @@ from random import randint
 
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator, RegexValidator
+from multiselectfield import MultiSelectField
+
+features = (
+    ('AC', 'Air Conditioner'),
+    ('PC', 'Computers'),
+    ('WB', 'Whiteboard'),
+    ('NONE', 'None')
+)
 
 
 # Create your models here.
@@ -10,7 +18,7 @@ class StudyArea(models.Model):
     objects = models.Manager()
     room_id = models.CharField(max_length=20, primary_key=True, validators=[RegexValidator('[a-zA-Z]-\d\d\d')])
     building = models.CharField(max_length=120)
-    features = models.JSONField(null=True)  # DUMMY FIELD TODO IMPLEMENT A WAY TO READ FEATURES
+    features = MultiSelectField(choices=features, max_choices=3, max_length=4)
     completed = models.BooleanField()
 
     def __str__(self):

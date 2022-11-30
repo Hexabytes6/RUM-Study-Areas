@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'studyarea',
     'whitenoise.runserver_nostatic',
+    'multiselectfield'
 ]
 
 MIDDLEWARE = [
