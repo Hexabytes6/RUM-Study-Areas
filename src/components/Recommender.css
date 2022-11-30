@@ -8,12 +8,13 @@
   margin-left: 30%;
   margin-right: 30%;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
 }
 
+
 .first {
-  margin-top: 70px;
+  margin-top: -10px;
 }
 
 
@@ -21,8 +22,24 @@
   font-family: Monday;
   text-align: left;
   margin-left: 2.5%;
-  margin-top: 8%;
+  margin-top: -0.6%;
   font-size: 15px;
   position: bottom;
   color: black;
+}
+
+.titleRecommend {
+  font-family: Monday;
+  text-align: left;
+  margin-left: 2%;
+  font-size: 60px;
+  margin-bottom: 0%;
+}
+
+.button-container3 {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  color: rgb(33, 36, 39);
+  text-decoration: none;
 }

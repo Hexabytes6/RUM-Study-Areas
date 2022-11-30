@@ -1,0 +1,45 @@
+.background1 {
+    background-image: url(recback.png);
+    background-position: bottom;
+  
+  }
+  
+  .selector {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  
+  }
+  
+  
+  .first {
+    margin-top: -10px;
+  }
+  
+  
+  .copyright2 {
+    font-family: Monday;
+    text-align: left;
+    margin-left: 2.5%;
+    margin-top: 18.8%;
+    font-size: 15px;
+    position: bottom;
+    color: black;
+  }
+  
+  .titleRecommend {
+    font-family: Monday;
+    text-align: left;
+    margin-left: 2%;
+    font-size: 60px;
+    margin-bottom: 0%;
+  }
+
+  .grid2{
+    margin-left: 40%;
+    margin-top: 5%;
+    position: center;
+    min-height: 100%;
+    display: flex;
+}
