@@ -18,86 +18,98 @@ const Catalog = () => {
     // Study Areas 
   const database = [
     {
-      room_id: "S-113",
-      building: "Stefani",
-      features: "air conditoner",
-      schedules: "Lunes, 07:00:00 - 22:00:00"
+        "room_id": "S-203",
+        "building": "Stefani",
+        "features": "Air Conditioner, Whiteboard",
+        "schedules": [
+            "Lunes, 07:00:00 - 22:00:00"
+        ]
     },
     {
-      room_id: "S-105",
-      building: "Stefani",
-      features: "computers",
-      schedules: "Lunes, 07:00:00 - 22:00:00"
+        "room_id": "S-113",
+        "building": "Stefani",
+        "features": "Air Conditioner, Computers, Whiteboard",
+        "schedules": "Lunes, 07:00:00 - 22:00:00 Martes, 07:00:00 - 22:00:00, Miercoles, 07:00:00 - 22:00:00, Jueves, 07:00:00 - 22:00:00, Viernes, 07:00:00 - 22:00:00"
+            
     },
     {
-        room_id: "S-204",
-        building: "Stefani",
-        features: "air condioner, computers",
-        schedules: "Lunes, 07:00:00 - 22:00:00"
+        "room_id": "S-205",
+        "building": "Stefani",
+        "features": "Air Conditioner, Computers, Whiteboard",
+        "schedules": [],
 
-      },
-      {
-        room_id: "S-221",
-        building: "Stefani",
-        features: "air condioner, computers",
-        schedules: "Lunes, 07:00:00 - 22:00:00"
-      },
-      {
-        name: "Room 5",
-        room_id: "S-115",
-        building: "Stefani",
-        features: "air condioner, computers",
-        schedules: "Lunes, 07:00:00 - 22:00:00"
-      },
-      {
-        room_id: "S-121",
-        building: "Stefani",
-        features: "air condioner, computers",
-        schedules: "Lunes, 07:00:00 - 22:00:00"
-      },
-    {
-        room_id: "II-219",
-        building: "Industrial",
-        features: "air condioner, desks",
-        schedules: "Lunes, 07:00:00 - 22:00:00"
     },
     {
-      room_id: "II-219",
-      building: "Industrial",
-      features:  ["Air Conditioner", "Computers", "Whiteboard"],
-      schedules: "Lunes, 07:00:00 - 22:00:00"
-  },
-  {
-    room_id: "II-219",
-    building: "Industrial",
-    features: "air condioner, desks",
-    schedules: "Lunes, 07:00:00 - 22:00:00"
-  },
-  {
-    room_id: "II-219",
-    building: "Industrial",
-    features: "air condioner, desks",
-    schedules: "Lunes, 07:00:00 - 22:00:00"
-  },
-  {
-    room_id: "II-219",
-    building: "Industrial",
-    features: "air condioner, desks",
-    schedules: "Lunes, 07:00:00 - 22:00:00"
-  },
-  {
-    room_id: "II-219",
-    building: "Industrial",
-    features: "air condioner, desks",
-    schedules: "Lunes, 07:00:00 - 22:00:00"
-  },
-  {
-    room_id: "II-219",
-    building: "Industrial",
-    features: "air condioner, desks",
-    schedules: "Lunes, 07:00:00 - 22:00:00"
-  },
-  ];
+        "room_id": "S-206",
+        "building": "Stefani",
+        "features": "Air Conditioner, Whiteboard, Keycard Required",
+        "schedules": [],
+
+    },
+    {
+        "room_id": "S-105D",
+        "building": "Stefani",
+        "features": "Air Conditioner, Computers, Whiteboard, Keycard Required",
+        "schedules": [],
+    },
+    {
+        "room_id": "S-105B",
+        "building": "Stefani",
+        "features": [
+            "Air Conditioner",
+            "Computers",
+            "Whiteboard",
+            "Keycard Required"
+        ],
+        "schedules": [],
+    },
+    {
+        "room_id": "S-230",
+        "building": "Stefani",
+        "features": [
+            "Air Conditioner",
+            "Whiteboard"
+        ],
+        "schedules": [],
+    },
+    {
+        "room_id": "S-121",
+        "building": "Stefani",
+        "features": [
+            "Air Conditioner",
+            "Computers",
+            "Whiteboard",
+            "Keycard Required"
+        ],
+        "schedules": [],
+    },
+    {
+        "room_id": "S-308",
+        "building": "Stefani",
+        "features": [
+            "Air Conditioner",
+            "Computers",
+            "Whiteboard"
+        ],
+        "schedules": [],
+    },
+    {
+        "room_id": "S-307",
+        "building": "Stefani",
+        "features": [
+            "Air Conditioner",
+            "Computers",
+            "Whiteboard"
+        ],
+        "schedules": [],
+    },
+    {
+        "room_id": "S-306",
+        "building": "Stefani",
+        "features": "Air Conditioner, Whiteboard",
+        "schedules": [],
+    }
+];
 
   
 
