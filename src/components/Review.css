@@ -32,7 +32,7 @@
     text-align: left;
     margin-left: 2%;
     font-size: 60px;
-    margin-bottom: 5%;
+    margin-bottom: -1%;
     margin-top: 1%;
   }
 
@@ -47,4 +47,13 @@
   box-shadow: 0px 12px 18px -6px rgba(50, 53, 50, 0.493);
   margin: 20px;
 
+}
+
+.subtitleReview {
+  font-family: Monday;
+  text-align: left;
+  margin-left: 2.5%;
+  margin-bottom: 7%;
+  font-size: 25px;
+  color: gray;
 }

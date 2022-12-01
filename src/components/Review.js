@@ -64,6 +64,7 @@ const renderCard = (card, index) =>{
     return (
       <div className="background2">
       <div className="review">Reviews for S-113:</div>
+      <div className="subtitleReview">Add your own.</div>
       <div className="grid">{database.map(renderCard)}</div>
       <div className="copyright3">Copyright © 2022 Hexabytes</div>
       </div>
