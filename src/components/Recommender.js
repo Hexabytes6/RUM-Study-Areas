@@ -70,6 +70,7 @@ import { Link } from 'react-router-dom'
     return (
       <div className="background1">
       <div className="titleRecommend">Recommender</div>
+      <div className="subtitleRec">We'll find the best study area for you.</div>
         <h3 className="first">Select Features</h3>
         <MultiSelect className="selector"
           options={features}

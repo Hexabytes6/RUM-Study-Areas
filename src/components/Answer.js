@@ -17,14 +17,11 @@ import './Box.css'
     // Study Areas 
   const database = [
     {
-        "room_id": "S-230",
+        "room_id": "S-113",
         "building": "Stefani",
-        "features": [
-            "Air Conditioner",
-            "Whiteboard"
-        ],
+        "features": "Air Conditioner, Whiteboard",
         "schedules": [
-            "L, M, W, J, V, 07:00:00 - 22:00:00"
+            "LMWJV 07:00:00 - 22:00:00"
         ],
         "reviews": [],
         "completed": true
@@ -34,7 +31,7 @@ import './Box.css'
 const renderCard = (card, index) =>{
     return(
       
-        <Card style={{ width: '18rem' }} key={index} className="box2">
+        <Card style={{ width: '18 rem'}} key={index} className="box2">
         <Card.Body>
             <Card.Title>{card.room_id}</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">{card.building}</Card.Subtitle>
@@ -53,9 +50,9 @@ const renderCard = (card, index) =>{
 
     return (
       <div className="background1">
-      <div className="titleRecommend">Here's your recommendation:</div>
+      <div className="answer">Here's your recommendation:</div>
       <div className="grid2">{database.map(renderCard)}</div>
-      <div className="copyright">Copyright © 2022 Hexabytes</div>
+      <div className="copyright8">Copyright © 2022 Hexabytes</div>
       </div>
     );
   };

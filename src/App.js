@@ -4,6 +4,7 @@ import Recommender from './components/Recommender';
 import Profile from './components/Profile';
 import Header from './components/Header';
 import Answer from './components/Answer';
+import Review from './components/Review';
 import './App.css';
 import "./Fonts/monday-sans.regular.ttf";
 import SignUp from './components/SignUp';
@@ -25,6 +26,7 @@ class App extends Component {
           <Route path="/profile" element= {<Profile/>}></Route>
           <Route path="/recommender" element={<Recommender/>}></Route>
           <Route path="/recommendations" element={<Answer/>}></Route>
+          <Route path="/review" element={<Review/>}></Route>
           <Route path="/" element={<Catalog/>}></Route>
         </Routes>
       </Router>
